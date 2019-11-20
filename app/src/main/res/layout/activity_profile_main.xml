@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Main">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_background" />
+
+    <LinearLayout
+        android:id="@+id/level_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/d_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Level: "
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="32sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="32sp"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/xpBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:progress="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level_info" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_stage">
+
+        <TextView
+            android:id="@+id/d_currentWorkout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#9B51E0"
+            android:gravity="center"
+            android:text="Current Workout"
+            android:textColor="?android:attr/detailsElementBackground"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/workOut"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/workOut" />
+
+        <LinearLayout
+            android:id="@+id/workOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/d_currentWorkout">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_curentWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="8dp"
+                android:paddingLeft="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/d_currentWorkout">
+
+                <TextView
+                    android:id="@+id/d_currentFocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Focus:  "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_currentFocusAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="0:05"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_currentRestAmount"
+                    app:layout_constraintStart_toEndOf="@+id/d_currentFocus"
+                    app:layout_constraintTop_toTopOf="@+id/d_currentFocus"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/d_currentRest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Rest: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/d_currentFocus"
+                    app:layout_constraintTop_toBottomOf="@+id/d_currentFocus" />
+
+                <TextView
+                    android:id="@+id/tv_currentRestAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="0:10"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_currentCoolDownAmount"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_currentFocusAmount" />
+
+                <TextView
+                    android:id="@+id/d_currentCoolDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Cool: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/d_currentRest"
+                    app:layout_constraintTop_toBottomOf="@+id/d_currentRest" />
+
+                <TextView
+                    android:id="@+id/tv_currentCoolDownAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:00"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/d_currentCoolDown"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_currentRestAmount"
+                    app:layout_constraintTop_toTopOf="@id/d_currentCoolDown"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="8dp"
+                android:paddingLeft="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/d_currentWorkout">
+
+                <TextView
+                    android:id="@+id/d_currentReps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_currentRepsAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_currentTotalTimeAmount"
+                    app:layout_constraintTop_toTopOf="@+id/d_currentReps" />
+
+                <TextView
+                    android:id="@+id/tv_currentTotalTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Time:  "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/d_currentReps"
+                    app:layout_constraintTop_toBottomOf="@+id/d_currentReps" />
+
+                <TextView
+                    android:id="@+id/tv_currentTotalTimeAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="15:30"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv_currentTotalTime2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currentRepsAmount" />
+
+                <TextView
+                    android:id="@+id/tv_currentFocusMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Max: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_currentTotalTime2"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currentTotalTime2" />
+
+                <TextView
+                    android:id="@+id/tv_currentFocusMaxTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="00:00"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_currentFocusMax"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_currentTotalTimeAmount"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_currentTotalTimeAmount"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <Button
+            android:id="@+id/b_continueWorkout"
+            android:layout_width="218dp"
+            android:layout_height="48dp"
+            android:background="@drawable/smart_trainer_button_next_workout"
+            android:onClick="startNextWorkout"
+            android:text="" />
+
+        <Button
+            android:id="@+id/b_stats"
+            android:layout_width="218dp"
+            android:layout_height="48dp"
+            android:background="@drawable/smart_trainer_button_statistics"
+            android:onClick="goToStatistics"
+            android:text="" />
+
+        <Button
+            android:id="@+id/b_Logs"
+            android:layout_width="218dp"
+            android:layout_height="48dp"
+            android:background="@drawable/smart_trainer_button_log"
+            android:onClick="goToLogs"
+            android:text="" />
+
+        <Button
+            android:id="@+id/b_settings"
+            android:layout_width="218dp"
+            android:layout_height="48dp"
+            android:background="@drawable/smart_trainer_button_settings"
+            android:onClick="go_Settings"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_progress"
+                android:layout_width="109dp"
+                android:layout_height="48dp"
+                android:background="@drawable/smart_trainer_button_progress"
+                android:onClick="getNextWorkout"
+                android:text=""
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button_goToFocusMax"
+                android:layout_width="109dp"
+                android:layout_height="48dp"
+                android:background="@drawable/smart_trainer_button_test_max"
+                android:onClick="goToFocusMax"
+                android:text=""
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="Stage: 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xpBar" />
+
+</android.support.constraint.ConstraintLayout>

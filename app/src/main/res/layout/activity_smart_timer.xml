@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Timers.SmartTimer">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/d_focusTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Focus Time:"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_focusTime"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter Seconds"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@+id/d_focusTime"
+        app:layout_constraintStart_toEndOf="@+id/d_focusTime"
+        app:layout_constraintTop_toTopOf="@+id/d_focusTime" />
+
+    <EditText
+        android:id="@+id/et_restTime"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter Seconds"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@+id/d_restTime"
+        app:layout_constraintStart_toEndOf="@+id/d_restTime"
+        app:layout_constraintTop_toTopOf="@+id/d_restTime" />
+
+    <TextView
+        android:id="@+id/d_restTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rest Time:"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_focusTime"
+        app:layout_constraintTop_toBottomOf="@+id/d_focusTime" />
+
+    <TextView
+        android:id="@+id/d_sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Reps:"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_restTime"
+        app:layout_constraintTop_toBottomOf="@+id/d_restTime" />
+
+    <TextView
+        android:id="@+id/d_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Time:"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_coolDown"
+        app:layout_constraintTop_toBottomOf="@+id/d_coolDown" />
+
+    <EditText
+        android:id="@+id/et_reps"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Enter Reps"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@+id/d_sets"
+        app:layout_constraintStart_toEndOf="@+id/d_sets"
+        app:layout_constraintTop_toTopOf="@+id/d_sets" />
+
+    <TextView
+        android:id="@+id/d_coolDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cool Down:"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/d_sets"
+        app:layout_constraintTop_toBottomOf="@+id/d_sets" />
+
+    <EditText
+        android:id="@+id/et_coolDown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="(optional)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/d_coolDown"
+        app:layout_constraintStart_toEndOf="@+id/d_coolDown"
+        app:layout_constraintTop_toTopOf="@+id/d_coolDown" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_time">
+
+        <Button
+            android:id="@+id/b_startWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="start"
+            android:tag="Start"
+            android:text="Start"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <Button
+            android:id="@+id/b_pauseWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="pause"
+            android:tag="Pause"
+            android:text="Pause"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <Button
+            android:id="@+id/b_resetWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:onClick="reset"
+            android:tag="reset"
+            android:text="Reset"
+            tools:layout_editor_absoluteX="255dp"
+            tools:layout_editor_absoluteY="278dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_workOutTime"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="0:00"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/d_time"
+        app:layout_constraintStart_toEndOf="@+id/d_time"
+        app:layout_constraintTop_toTopOf="@+id/d_time"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/d_time"
+            app:layout_constraintTop_toBottomOf="@+id/d_time" />
+
+        <TextView
+            android:id="@+id/stateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/state"
+            app:layout_constraintStart_toEndOf="@+id/state"
+            app:layout_constraintTop_toTopOf="@+id/state" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/b_finishWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="finishWorkout"
+            android:text="Finish Workout"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

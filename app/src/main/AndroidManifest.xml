@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pepin.nate.mentalhitt">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".Timers.App"
+        android:allowBackup="true"
+        android:icon="@raw/icon_launch_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@raw/icon_launch_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning,InnerclassSeparator">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Timers.ManualTimer"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_manual_timer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".About"
+            android:configChanges="orientation"
+            android:label="About"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Profile_Main"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_smart_trainer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Timers.SmartTimer"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_smart_timer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Profile_Settings"
+            android:configChanges="orientation"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".LogActivity"
+            android:configChanges="orientation"
+            android:label="Logs"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Statistics"
+            android:configChanges="orientation"
+            android:label="Statistics"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Timers.Focus_max"
+            android:configChanges="orientation"
+            android:label="Focus Max"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Timers.TimerService" />
+        <service android:name=".Timers.FocusMaxService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="80f70341d434c6c7d71ffdccfa78cc9d28c8bbca" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

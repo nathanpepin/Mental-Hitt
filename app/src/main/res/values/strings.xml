@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Mental HIIT</string>
+    <string name="title_activity_how_to_use">How To Use</string>
+    <string name="title_activity_smart_trainer">Smart Trainer</string>
+    <string name="title_activity_smart_timer">Smart Timer</string>
+    <string name="title_activity_manual_timer">Manual Timer</string>
+
+    <string name="highIntensity">Focus: </string>
+    <string name="lowIntensity">Rest: </string>
+    <string name="reps">Reps: </string>
+    <string name="cool">Cool: </string>
+    <string name="time">Time: </string>
+    <string name="max">Max: </string>
+
+    <string name="dummyTimeValue">00:00</string>
+
+
+    <string name="about_text">
+        \tThis application was developed by Nathan Pepin\n\n\t
+
+        This application takes knowledge about meditation and integrates it with exercise science.\n\n\t
+        The hypothesis is that the progressive overload model will increase the ability to stay in the present moment when the initial stimulus is increased over time.\n\n\t
+        For instance, someone who is getting started with weight lifting will generally select a lower weight that they can handle, and over time they will increase the load as they get stronger.\n\n\t
+        When the increase in load is kept manageable over a long period of time, there is potential for significant increase in strength. The app applies this concept to mental focus.
+        \n\n\t
+
+        For more details, including an explanation of how to use the app, please visit:
+        \n\t\t
+        nathanpepin.com
+        \n\n\t
+
+        Version 2.0 is planned in the future with many new features and tools, including guided meditations to help people get started.
+        \n\n\t
+
+        The current release of the software will not contain ads, but ads are likely to be added in the release to support development.
+        I want to ensure that the application is working on a wide spectrum of devices before any sort of monetization occurs, and it is difficult for me to test that as a single developer.
+        \n\n\t
+
+        I would prefer a donation based model for the app, but Google policies on apps that take donations is a little unclear.
+        Many app developers report not having any issues but others report that their account got shut down.
+        I am doing more research to ensure whatever I do is compliant with TOS.
+        \n\n\t
+
+        If there are any questions, comments, or suggestions please contact me through my website.
+        \n\n
+
+        Disclaimer: This app does not promise any health benefits and the app does not provide medical advice. For medical advice, please consult a qualified professional.
+    </string>
+</resources>

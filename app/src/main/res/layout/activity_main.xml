@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_background" />
+
+    <ImageView
+        android:id="@+id/constraintLayout3"
+        android:layout_width="269dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/main_button_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/b_train"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_button_smart_trainer"
+        android:onClick="smartTraining"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <Button
+        android:id="@+id/b_manual"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/main_button_manual_timer"
+        android:onClick="manualTraining"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/b_train"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/b_train"
+        app:layout_constraintTop_toBottomOf="@+id/b_train" />
+
+    <Button
+        android:id="@+id/b_howToUse"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/main_button_how_to_use"
+        android:onClick="howToUse"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/b_manual"
+        app:layout_constraintStart_toStartOf="@+id/b_manual"
+        app:layout_constraintTop_toBottomOf="@+id/b_manual" />
+
+    <Button
+        android:id="@+id/b_about"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/main_button_about"
+        android:onClick="about"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/b_howToUse"
+        app:layout_constraintStart_toStartOf="@+id/b_howToUse"
+        app:layout_constraintTop_toBottomOf="@+id/b_howToUse" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Version: 1.13"
+        android:textColor="#FFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

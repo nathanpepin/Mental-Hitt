@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            style="@style/h_text"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Workout Date: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_firstWorkoutDate"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/06/1991" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Workout Date: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_lastWorkoutDate"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/06/1991" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Workouts: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_numberOfWorkouts"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Focus: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_averageFocus"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Rest: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_averageRest"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Reps: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_averageReps"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Cool Down: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_averageCoolDown"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Workout Time: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_averageWorkoutTime"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Time Focusing: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_totalFocus"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Time Resting: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_totalRest"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Reps: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_totalReps"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Cool Down: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_totalCoolDown"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Workout Time: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_totalWorkout"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Meditation Time: "
+                style="@style/stat_text"/>
+
+            <TextView
+                android:id="@+id/stat_totalMeditation"
+                style="@style/stat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:23" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
